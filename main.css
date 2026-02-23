@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(fonts/Inter-Regular.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+}
+
+.sectionContainer {
+    padding: 30px;
+}
+
+#section1 {
+    background-image: linear-gradient(to bottom, #0F172B, #334E91);
+    padding-top: 150px;
+    color: white;
+}
+
+#section1 #snippet {
+    padding: 12px 30px;
+    background-color: rgba(254, 185, 1, 0.25);
+    color: #B59410;
+    outline: #B59410 solid 1px;
+    width: 451px;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#section1 #snippet p {
+    margin: 0;
+}
+
+#section1 img {
+    width: 24px;
+}
+
+#section2 {
+    background-color: #F8FAFC;
+}
+
+#section3 {
+    background-color: #FFFFFF;
+}
+
+#section4 {
+    background-color: #F8FAFC;
+}
+
+#section5 {
+    background-color: #0F172B;
+}
+
+#section6 {
+    background-color: #FFFFFF;
+}
+
+#section7 {
+    background-color: #0F172B;
+}
