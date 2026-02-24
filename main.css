@@ -1,10 +1,31 @@
-@font-face {
-    font-family: "Inter-Regular";
-    src: url(fonts/Inter-Regular.ttf) format("truetype");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
 }
 
 body {
-    margin: 0;
+    color: #0F172B;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+b {
+    font-weight:inherit;
+    color: #B59410;
 }
 
 .sectionContainer {
@@ -13,8 +34,15 @@ body {
 
 #section1 {
     background-image: linear-gradient(to bottom, #0F172B, #334E91);
-    padding-top: 150px;
+    padding-top: 110px;
     color: white;
+    display:flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#section1 h1 {
+    font-size: 64px;
 }
 
 #section1 #snippet {
@@ -22,32 +50,266 @@ body {
     background-color: rgba(254, 185, 1, 0.25);
     color: #B59410;
     outline: #B59410 solid 1px;
-    width: 451px;
-    height: min-content;
+    width: max-content;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 50px;
+    gap: 12px;
+    font-size: 20px;
+}
 
+#section1 svg {
+    width: 24px;
 }
 
 #section1 #snippet p {
     margin: 0;
+    
 }
 
-#section1 img {
-    width: 24px;
+#section1 .title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#section1 #cta1 {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.buttonDiv button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    color:#0F172B;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.gbutton{
+    background-color: #B59410;
+}
+
+.gbutton svg path {
+    stroke-width: 3px;
+}
+
+.wbutton {
+    background-color: #FFFFFF;
+}
+
+#extras1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#extras1 div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+#extras1 div svg {
+    color: #B59410;
 }
 
 #section2 {
     background-color: #F8FAFC;
+    color:#0F172B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cards .card {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBDBDB;
+    border-radius: 12px;
+    gap: 30px;
+    padding: 30px;
+    height: 440px;
+    width: 230px;
+}
+
+.card .description {
+    font-weight: 500;
+}
+
+.card .checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card .checklist div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.icon1 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(254, 185, 1, 0.25);
+    color: #B59410;
+    border-radius: 12px;
+}
+
+.icon1 svg {
+    width: 35px;
+}
+
+.checklist svg {
+    width: 24px;
+}
+
+.checklist div svg path {
+    color: #B59410;
 }
 
 #section3 {
     background-color: #FFFFFF;
+    height: 1044px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#benefits .line {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#benefits .line h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+#cards2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.icon2 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B59410;
+}
+
+.icon2 svg {
+    width: 45px;
+}
+
+.card2 {
+    background-color: #F8FAFC;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBDBDB;
+    border-radius: 12px;
+    gap: 30px;
+    padding: 30px;
+    height: auto;
+    width: 500px;
+}
+
+.card2 h3 {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 #section4 {
     background-color: #F8FAFC;
+    color:#0F172B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.prices {
+    font-size: 14px;
+}
+
+.bigtext {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card button {
+    background-color: #FFFFFF;
+    border: solid 1px #999999;
+    height: 40px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+#popular {
+    position:relative;
+    top: 46px;
+    background-color: #B59410;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+#section4 #focuscard {
+    background-color: #0F172B;
+    color: #FFFFFF;
+    border: solid 3px #B59410;
+}
+
+#focuscard button {
+    background-color: #B59410;
+    border: none;
 }
 
 #section5 {
