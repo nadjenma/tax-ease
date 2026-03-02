@@ -12,6 +12,7 @@ body {
 h1 {
     font-size: 48px;
     font-weight: 700;
+
 }
 
 h2 {
@@ -38,7 +39,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 21px 30px;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -77,9 +78,27 @@ header #menu {
     padding: 10px 15px;
 }
 
-#menu #chevron {
+#chevron {
+    display: none;
+    visibility: hidden;
+    padding: 0px;
+    border: none;
+    background: none;
+}
+
+#menu-toggle {
     display: none;
 }
+
+#menu-toggle:checked~#chevron svg {
+    transform: scaleY(-1);
+}
+
+#menu-toggle:checked+#menu {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .sectionContainer {
     padding: 30px;
@@ -197,6 +216,11 @@ button {
     min-height: 100vh;
 }
 
+#section2 h1 {
+    word-break: break-word;
+    hyphens: auto;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
@@ -216,7 +240,7 @@ button {
     height: auto;
     padding: 30px;
     width: 286px;
-    min-height: 80vh;
+    min-height: 550px;
 }
 
 .card .description {
@@ -244,13 +268,14 @@ button {
     color: #B59410;
     display: flex;
     justify-content: center;
-    min-width: 60px;
-    min-height: 60px;
+    width: 60px;
+    height: 60px;
 
 }
 
 .icon1 svg {
     width: 35px;
+    ;
 }
 
 .checklist svg {
@@ -376,7 +401,7 @@ button {
     font-weight: 600;
     padding: 5px 10px;
     max-width: max-content;
-    position: relative;
+    position: absolute;
     top: 15px;
 }
 
@@ -398,7 +423,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 474px;
+    min-height: 474px;
     justify-content: center;
     min-height: 70vh;
 }
@@ -517,10 +542,21 @@ button {
     header {
         flex-direction: column;
         gap: 10px;
+        padding-bottom: 0px;
+        min-height: fit-content;
+    }
+
+    #section1 {
+        gap: 50px;
+        padding-top: 150px;
     }
 
     #section1 h1 {
         font-size: 48px;
+    }
+
+    #section1 #snippet {
+        display: none;
     }
 
     #section1 .title {
@@ -555,5 +591,27 @@ button {
         flex-direction: column;
         align-items: center;
     }
-}
 
+    #chevron {
+        display: flex;
+        visibility: visible;
+    }
+
+    #chevron svg {
+        width: 30px;
+        color: #FFFFFF;
+    }
+
+    header #menu {
+        display: none;
+    }
+
+    .card2 {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #section6 #contacts {
+        gap: 50px;
+    }
+}
