@@ -111,6 +111,7 @@ header #menu {
     flex-direction: column;
     gap: 100px;
     min-height: 100vh;
+    padding-top: 120px;
 }
 
 #section1 h1 {
@@ -553,10 +554,6 @@ button {
 
     #section1 h1 {
         font-size: 48px;
-    }
-
-    #section1 #snippet {
-        display: none;
     }
 
     #section1 .title {
